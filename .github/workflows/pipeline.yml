@@ -1,7 +1,7 @@
 name: Cypress API Tests
 on: 
-    pull_request:
-        branches: [master]
+    schedule:
+      - cron: '15 20-22 * * 1-5'
 jobs:
   cypress-run:
     runs-on: ubuntu-22.04
